@@ -1,12 +1,8 @@
 // vite.config.js
-import react from "@vitejs/plugin-react";
-
 export default {
-  plugins: [react()],
   build: {
     rollupOptions: {
-      // Make sure to correctly configure external dependencies if needed
-      external: ["react", "react-dom"],
+      external: ["some-external-library"], // Adjust this list based on your dependencies
     },
   },
 };
