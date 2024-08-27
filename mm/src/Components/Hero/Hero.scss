@@ -1,0 +1,133 @@
+.hero-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Adjust height as needed */
+}
+.hero {
+  width: 100%;
+/* Adjust height as needed */
+}
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 75%;
+  color: #ffffff;
+}
+
+.left-section h1 {
+  margin-top: 220px;
+  font-size: 4rem; /* Adjust font size as needed */
+  font-family: "Lato", sans-serif;
+}
+
+.left-section h2 {
+  margin-top: -10px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+}
+.left-section p{
+  color: #d2cece;
+  width: 90%;
+  font-size: 13px;
+}
+
+.left-section button {
+  margin-top: 20px;
+  font-size: 15px;
+  width: 190px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  border: 1px solid #c50202;
+  cursor: pointer;
+  background-color: #abc502;
+  color: #000;
+  height: 50px;
+}
+.span{
+  color: #E733EC;
+}
+.left-section button:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #c50202;
+}
+
+.right-section {
+  width: 50%;
+  height: 100%;
+  background-color: #f90a0af7; /* Adjust background color */
+  // position: relative; /* Ensure positioning context */
+  // z-index: 1; /* Ensure it's above the image */
+}
+
+.right-section img {
+  // position: relative; /* Position image absolutely within right-section */
+  
+ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the div */
+  // z-index: -1; /* Place it behind the background color */
+}
+
+
+@media (max-width: 768px) {
+  .hero-content {
+    width: 100%;
+    
+    flex-direction: column;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Adjust height for mobile */
+  }
+  .left-section p {
+    
+    display: flex;
+    justify-content: center;
+    width: 180%;
+    font-size: 12px;
+    font-family: "Lato", sans-serif;
+    color: #d6d5d5;
+  }
+  .left-section h2 {
+    display: flex;
+    justify-content: center;
+    width: 200%;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+  }
+  .left-section h1 {
+    margin-top: -20px;
+    display: flex;
+    
+    justify-content: center;
+     width: 200%;
+    font-size: 3rem; /* Adjust font size as needed */
+    font-family: "Lato", sans-serif;
+  }
+  .left-section button {
+    margin-top: 20px;
+    font-size: 15px;
+    width: 140px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    border: 1px solid #c50202;
+    cursor: pointer;
+    background-color: #abc502;
+    color: #000;
+    height: 30px;
+  }
+  
+  
+  .right-section {
+    display: none /* Hide right section on mobile */
+  }
+}
